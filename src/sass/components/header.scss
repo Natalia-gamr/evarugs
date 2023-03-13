@@ -1,0 +1,39 @@
+.header {
+    background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    .container {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        padding: 25px 50px;
+        align-items: center;
+        div {
+            display: grid;
+            align-items: center;
+            grid-auto-flow: column;
+            gap: 15px;
+            cursor: pointer;
+        }
+    }
+    &__tel {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 15px;
+    }
+    &__inst {
+        max-width: 150px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .header {
+        .container {
+            div:first-child {
+                display: none;
+            }
+        }
+    }
+}
