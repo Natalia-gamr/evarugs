@@ -32,3 +32,12 @@
        }
     }
 }
+@media (max-width: 470px) {
+    .footer {
+       padding-top: 40px;
+       font-size: 12px;
+       .container {
+        gap: 20px;
+       }
+    }
+}

@@ -60,13 +60,14 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 850px) {
     .form {
-        max-width: 95%;
+        max-width: 100%;
         flex-wrap: wrap;
         &__input {
             font-size: 16px;
             flex-basis: 35%;
+            margin-top: 20px;
         }
         input {
             width: 250px;
@@ -82,3 +83,20 @@
         }
     }
 }
+
+@media (max-width: 470px) {
+    .form {
+        input {
+            width: 120px;
+        }
+        &__input {
+           flex-basis: 25%;
+           margin-right: 16px;
+        }
+        #message {
+            width: 160px;
+        }
+       
+    }
+}
+

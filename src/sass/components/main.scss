@@ -77,3 +77,21 @@
         }
     }
 }
+@media (max-width: 470px) {
+    .main {
+        &__logo {
+            font-size: 28px;
+            img {
+                width: 70px;
+            }
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__button {
+            height: 45px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
