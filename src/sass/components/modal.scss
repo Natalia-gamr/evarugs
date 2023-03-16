@@ -24,7 +24,7 @@
         display: grid;
         grid-template-areas: 'a b'
                              'c c'
-                              'd d';
+                             'd d';
         gap: 16px;
         input, textarea {
             padding: 8px;
@@ -58,6 +58,7 @@
         }
     }
 }
+
 @media (max-width: 470px) {
     .modal {
         &__wrap {

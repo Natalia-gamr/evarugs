@@ -18,19 +18,19 @@ const forms = () => {
             if (item.value) {
                 return;
             } else {
-                let alert = document.createElement('div')
-                alert.classList.add('form__alert')
-                item.parentNode.append(alert)
+                let alert = document.createElement('div');
+                alert.classList.add('form__alert');
+                item.parentNode.append(alert);
                 switch (item.name) {
                     case 'name':
-                        alert.innerHTML = `Введите имя`
+                        alert.innerHTML = `Введите имя`;
                         break;
                     case 'message':
-                        alert.innerHTML = `Введите отзыв`
+                        alert.innerHTML = `Введите отзыв`;
                         break;
                 }
                 item.addEventListener('keypress', () => {
-                    alert.remove()
+                    alert.remove();
                 })
                 req = false;
             }
@@ -39,9 +39,9 @@ const forms = () => {
     }
 
     function getDate() {
-        const date = form.querySelector('#date').value
-        let dates = date.split('-').join(',')
-        let newDate = new Date(dates)
+        const date = form.querySelector('#date').value;
+        let dates = date.split('-').join(',');
+        let newDate = new Date(dates);
 
         if (!date) {
             newDate = new Date();
@@ -50,33 +50,33 @@ const forms = () => {
             minutes = new Date().getMinutes(),
             day = newDate.getDate(),
             month = newDate.getMonth() + 1,
-            year = newDate.getFullYear()
+            year = newDate.getFullYear();
 
         hours < 10 ? hours = '0' + hours : hours;
         minutes < 10 ? minutes = '0' + minutes : minutes;
         day < 10 ? day = '0' + day : day;
         month < 10 ? month = '0' + month : month;
 
-        let diffDate = Math.round((+(new Date()) - +newDate) / 1000 / 60 / 60)
+        let diffDate = Math.round((+(new Date()) - +newDate) / 1000 / 60 / 60);
 
         if (diffDate <= 24 && diffDate > 0) {
-            return `сегодня ${hours}:${minutes}`
+            return `сегодня ${hours}:${minutes}`;
         } else if (diffDate > 24 && diffDate <= 48) {
-            return `вчера ${hours}:${minutes}`
+            return `вчера ${hours}:${minutes}`;
         } else {
-            return `${day}-${month}-${year} ${hours}:${minutes}`
+            return `${day}-${month}-${year} ${hours}:${minutes}`;
         }
     }
 
     const sendReview = () => {
         const name = form.querySelector('#name'),
-            review = form.querySelector('#message')
+            review = form.querySelector('#message');
 
         if (validateForm()) {
             let newReview = document.createElement('div');
 
-            newReview.classList.add('reviews__item')
-            document.querySelector('.reviews__items').append(newReview)
+            newReview.classList.add('reviews__item');
+            document.querySelector('.reviews__items').append(newReview);
 
             newReview.innerHTML = `<div class="reviews__name">${name.value}</div> 
                                     <div class="reviews__date">${getDate()}</div>         
@@ -88,14 +88,9 @@ const forms = () => {
                                             </svg> </div> 
                                         <div class="reviews__icon" alt="delete" id='delete' >
                                             <img src="icons/delete.svg" alt="delete" >
-                                        </div></div>`
+                                        </div></div>`;
         }
     }
-
-    // const clearInputs = () => {
-    //     let inputs = form.querySelectorAll('.form__input input')
-    //     inputs.forEach(input => input.reset())
-    // }
 
     sendButton.addEventListener('click', (e) => {
         e.preventDefault();

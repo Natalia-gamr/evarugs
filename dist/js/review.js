@@ -1,11 +1,11 @@
 const reviewIcons = () => {
-    let likeIcons = document.querySelectorAll('.review__like')
+    let likeIcons = document.querySelectorAll('.review__like');
 
     likeIcons.forEach(likeIcon => {
         likeIcon.addEventListener('click', () => {
-            let like = likeIcon.closest('.reviews__item')
-            like.toggleAttribute('like')
-            like.classList.toggle('like')
+            let like = likeIcon.closest('.reviews__item');
+            like.toggleAttribute('like');
+            like.classList.toggle('like');
         })
     })
 
@@ -13,12 +13,11 @@ const reviewIcons = () => {
 
     deleteIcons.forEach(deleteIcon => {
         deleteIcon.addEventListener('click', () => {
-            let review = deleteIcon.closest('.reviews__item')
-            review.remove()
+            let review = deleteIcon.closest('.reviews__item');
+            review.remove();
         })
     })
 }
-
 reviewIcons();
 
 export default reviewIcons;

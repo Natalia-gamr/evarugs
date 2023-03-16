@@ -1,6 +1,6 @@
 .info {
     padding-top: 25px;
-     background-image: url('../img/bg-info.png');
+    background-image: url('../img/bg-info.png');
     background-repeat: no-repeat;
     background-position-y: center;
     &__items {
@@ -64,6 +64,7 @@
         }
     }
 }
+
 @media (max-width: 850px) {
     .info {
         &__title {
@@ -71,6 +72,7 @@
         }
     }
 }
+
 @media (max-width: 470px) {
     .info {
         &__title {

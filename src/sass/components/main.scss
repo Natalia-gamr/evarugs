@@ -1,6 +1,5 @@
 .main {
     padding-top: 47px;
-
     &__item {
         display: grid;
         grid-auto-flow: column;
@@ -22,10 +21,10 @@
         line-height: 21px;
         text-align: center;
         a {
-           color: #737373; 
-           &:hover {
-            color :#383838 ;
-        }
+            color: #737373; 
+            &:hover {
+                color :#383838 ;
+            }
         }
     }
     &__logo {
@@ -82,6 +81,7 @@
         }
     }
 }
+
 @media (max-width: 470px) {
     .main {
         &__logo {

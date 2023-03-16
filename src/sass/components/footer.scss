@@ -18,10 +18,10 @@
         justify-content: center;
     }
     a {
-     color:black;
-     &:hover {
-        color: rgba(0, 0, 0, 0.7);
-     }   
+        color:black;
+        &:hover {
+            color: rgba(0, 0, 0, 0.7);
+        }   
     }
 }
 
@@ -30,6 +30,7 @@
        padding-top: 80px;
     }
 }
+
 @media (max-width: 850px) {
     .footer {
        padding-top: 80px;
@@ -38,6 +39,7 @@
        }
     }
 }
+
 @media (max-width: 470px) {
     .footer {
        padding-top: 40px;
