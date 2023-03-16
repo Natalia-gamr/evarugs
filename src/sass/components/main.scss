@@ -4,7 +4,7 @@
     &__item {
         display: grid;
         grid-auto-flow: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         &:last-child {
             background-image: url(../img/bg-main.png);
@@ -21,8 +21,12 @@
         font-size: 18px;
         line-height: 21px;
         text-align: center;
-
-        color: #737373;
+        a {
+           color: #737373; 
+           &:hover {
+            color :#383838 ;
+        }
+        }
     }
     &__logo {
         font-style: italic;
@@ -47,10 +51,8 @@
     &__button {
         background: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 99.51%);
         border-radius: 7px;
-        color: white;
         width: 179px;
         height: 53px;
-        border: none;
         font-weight: 900;
         font-size: 20px;
         line-height: 23px;
@@ -60,6 +62,9 @@
 
 @media (max-width: 850px) {
     .main {
+        .container {
+            justify-items: center
+        }
         &__item:not(:first-child) {
             img {
                 display: none;

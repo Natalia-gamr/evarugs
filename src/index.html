@@ -16,17 +16,17 @@
             <div class="header__tel">
                 <div>
                     <img src="icons/tel.svg" alt="tel icon">
-                    +375 29 292-29-29 (VEL)
+                    <a href="tel: +375292922929">+375 29 292-29-29 (VEL)</a>
                 </div>
-                <div>+375 33 333-33-33 (МТС)</div>
+                <a href="tel: +375333333333">+375 33 333-33-33 (МТС)</a>
             </div>
             <div>
                 <img src="icons/map.svg" alt="map icon">
-                ваш город
+                <a href="#">ваш город</a>
             </div>
             <div class="header__inst">
                 <img src="icons/inst.svg" alt="instagram icon">
-                посетите нашу страницу
+                <a href="#">посетите нашу страницу</a>
             </div>
         </div>
     </header>
@@ -38,9 +38,9 @@
                     EVARUGS
                 </div>
                 <div class="main__menu">
-                    <div>отзывы</div>
-                    <div>что это?</div>
-                    <div>контакты</div>
+                    <a href="#">отзывы</a>
+                    <a href="#">что это?</a>
+                    <a href="#">контакты</a>
                 </div>
             </div>
             <div class="main__item">
@@ -187,21 +187,18 @@
                 <div class="footer__title">
                     МЫ В СОЦИАЛЬНЫХ СЕТЯХ
                 </div>
-                <img src="icons/inst-color.svg" alt="">
+                <a href="#"><img src="icons/inst-color.svg" alt="instagram icon"></a>
             </div>
             <div class="footer__item">
                 <div class="footer__title">
                     КОНТАКТНЫЕ ТЕЛЕФОНЫ
                 </div>
-                <div>
+                <a href="#">
                     +375 29 292-29-29 (VEL)
-
-
-                </div>
-                <div>
+                </a>
+                <a href="#">
                     +375 33 333-33-33 (МТС)
-                </div>
-
+                </a>
             </div>
             <div class="footer__item">
                 <div class="footer__title">
@@ -209,23 +206,24 @@
                 </div>
                 <div>
                     Индивидуальное изготовление EVA ковриков для вашего автомобиля
-
-
                 </div>
-                <div>
+                <a href="#">
                     ваш город
-                </div>
+                </a>
             </div>
         </div>
     </footer>
-    <div class="modal">
-        <div class="modal__title">ФОРМА ЗАЯВКИ</div>
-        <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-        </form>
-        <button>отправить</button>
+    <div class="modal" hidden="true">
+        <div class="modal__wrap">
+            <div class="modal__title">ФОРМА ЗАЯВКИ</div>
+            <form>
+                <input name="name" type="text" placeholder="Ваше имя" required>
+                <input name="email" type="email" placeholder="Ваш e-mail" required>
+                <textarea name="message"
+                    placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"></textarea>
+                <button class="modal__button" type="submit">отправить</button>
+            </form>
+        </div>
     </div>
     <script type="module" src="js/index.js"></script>
 </body>

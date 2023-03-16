@@ -20,6 +20,7 @@
                               'c c'
                               'd d';
         align-items:center;
+        transition: all 0.3s;
     }
     &__message {
         position: relative;
@@ -46,12 +47,8 @@
         max-width: 150px;
         margin-top: 12px;
         padding: 12px;
-        border-radius: 9px;
-        border: none;
-        color: white;
-        font-weight: 900;
-         background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
-         margin-bottom: 20px;
+        margin-bottom: 20px;
+        
     }
     &__icons {
         grid-area: d;
@@ -70,7 +67,10 @@
       }
     }
     .like {
-        fill: red;
+        svg {
+           fill: red; 
+        }
+        
     }
     &__date {
         text-align: end;

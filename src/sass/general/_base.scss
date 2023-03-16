@@ -2,13 +2,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: all 0.3s;
+    transition: 0.3s all;
+   
+}
+body {
+    position: relative;
 }
 
 .container {
     display: grid;
     max-width: 1250px;
     margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-weight: 900;
+    background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
+    &:hover {
+        background: linear-gradient(95.2deg,#8d0049 2.23%,#202265 99.51%);
+    }
 }
 
 @media (max-width: 1024px) {

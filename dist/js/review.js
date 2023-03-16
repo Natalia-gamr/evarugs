@@ -3,8 +3,9 @@ const reviewIcons = () => {
 
     likeIcons.forEach(likeIcon => {
         likeIcon.addEventListener('click', () => {
-            likeIcon.toggleAttribute('like')
-            likeIcon.classList.toggle('like')
+            let like = likeIcon.closest('.reviews__item')
+            like.toggleAttribute('like')
+            like.classList.toggle('like')
         })
     })
 

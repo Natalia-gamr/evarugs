@@ -17,6 +17,12 @@
         max-width: 210px;
         justify-content: center;
     }
+    a {
+     color:black;
+     &:hover {
+        color: rgba(0, 0, 0, 0.7);
+     }   
+    }
 }
 
 @media (max-width: 1024px) {
